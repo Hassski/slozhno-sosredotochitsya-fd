@@ -76,7 +76,7 @@
   background-color: var(--accent-color);
   fill: var(--accent-color);
   filter: none;
-  box-shadow: 0px 0px 10px rgba(255, 0, 112, 0.6);
+  box-shadow: 0px 0px 10px rgba(255, 0, 112, 0.9);
 }
 
 .frame::before {
@@ -122,10 +122,10 @@
 
 .header__text {
   max-inline-size: 491px;
-  padding: 0 0 20px 0;
+  padding: 0 0 22px 0;
   justify-self: end;
   align-self: center;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .question__section-title {
@@ -184,7 +184,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  padding-block-start: 20px;
 }
 
 .question__section-title-concentration-is-lost {
@@ -281,7 +280,6 @@
   .question__section__concentration-is-lost,
   .question__section-answer-lose-container,
   .question__section__better {
-    gap: 20px;
   }
 
 .header__theme-menu {
@@ -346,7 +344,6 @@
   }
 
   .header__text {
-    padding: 20px 0;
     max-inline-size: 364px;
     box-sizing: border-box;
   }
@@ -359,11 +356,10 @@
   .question__section-answer-concentration-is-lost-container {
     display: flex;
     flex-direction: column;
-    padding-block-start: 20px;
   }
 
   .question__section-title-concentration-is-lost {
-    max-inline-size: 236px;
+    max-inline-size: 260px;
   }
 
   .question__section__better {
@@ -386,9 +382,15 @@
     margin-left: 0px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+  
+  .header__theme-menu-list {
+    padding-left: 285px;
+    gap: 11.9px;
+  }
 
   .header__text {
     max-inline-size: 355px;
+    padding-right: 31px;
     max-block-size: 117px;
   }
 
@@ -397,6 +399,10 @@
     padding: 40px 0 0 0;
     display: flex;
     flex-direction: column;
+  }
+
+  .question__section-title {
+    padding-bottom: 20px;
   }
 
   .question__section-concentration-is-lost {
