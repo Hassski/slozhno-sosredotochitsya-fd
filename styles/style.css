@@ -10,18 +10,15 @@
   background-attachment: fixed;
 }
 
-/* Стиль для хедера */
 .header {
-  height: 100vh; /* Добавлено для привязки высоты к окну */
-  min-height: 500px; /* Минимальная высота, можно настроить по макету */
+  height: 100vh;
+  min-height: 500px;
   padding: 20px;
   display: grid;
   position: relative;
   grid-template-rows: 1fr min-content 1fr;
 }
 
-
-/* Меню в хедере */
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
@@ -34,7 +31,7 @@
   text-align: center;
   border: none;
   background: transparent;
-  text-transform: lowercase; /* Добавлено для приведения текста к строчным буквам */
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button_active {
@@ -55,7 +52,6 @@
   cursor: pointer;
 }
 
-/* Декоративный элемент */
 .decorative__element {
   position: absolute;
   top: 0;
@@ -79,11 +75,10 @@
   border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--accent-color);
-  filter: none; /* Убираем старую тень */
-  box-shadow: 0px 0px 10px rgba(255, 0, 112, 0.6); /* Новый стиль тени с прозрачностью */
+  filter: none;
+  box-shadow: 0px 0px 10px rgba(255, 0, 112, 0.6);
 }
 
-/* Рамки вокруг блока */
 .frame::before {
   position: absolute;
   top: 0;
@@ -108,7 +103,6 @@
   margin: 20px;
 }
 
-/* Заголовок на странице */
 .header__title {
   margin-left: -20px;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -134,7 +128,6 @@
   line-height: 1.4;
 }
 
-/* Стили секций вопросов */
 .question__section-title {
   color: var(--btn-color);
   font-weight: 700;
@@ -147,7 +140,6 @@
   color: var(--text-color);
 }
 
-/* Ссылки для ответа на вопросы */
 .question__section-answer-link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -165,8 +157,7 @@
   border: 1px solid var(--text-color);
 }
 
-/* Секции с вопросами */
-.question__section__one {
+.question__section__сoncentration {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-start: 60px;
@@ -183,28 +174,28 @@
   padding-block-end: 10px;
 }
 
-.question__section-two {
+.question__section-concentration-is-lost {
   padding-block-start: 80px;
   padding-block-end: 80px;
   margin: 0 20px;
 }
 
-.question__section-answer-two-container {
+.question__section-answer-concentration-is-lost-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding-block-start: 20px;
 }
 
-.question__section-title-two {
+.question__section-title-concentration-is-lost {
   max-inline-size: 315px;
 }
 
-.question__section-answer-title-two {
+.question__section-answer-title-concentration-is-lost {
   margin-block-end: 10px;
 }
 
-.question__section__fhree {
+.question__section__better {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-end: 80px;
@@ -215,12 +206,12 @@
   font-weight: 400;
 }
 
-.question__section-answer-fhree {
+.question__section-answer-better {
   display: grid;
   gap: 20px;
 }
 
-.question__section-answer-text-fhree {
+.question__section-answer-text-better {
   padding-block-start: 10px;
 }
 
@@ -232,7 +223,6 @@
   margin: 0 20px 20px 20px;
 }
 
-/* Контейнер для изображений */
 .question__section__image-container {
   margin: 0 20px;
   display: grid;
@@ -240,7 +230,6 @@
   grid-template-areas: inherit;
 }
 
-/* Стили изображений в секциях */
 .question__section__image-item {
   inline-size: 100%;
   block-size: 100%;
@@ -270,10 +259,9 @@
   grid-column: 2 / 4;
 }
 
-/* Футер */
 .footer {
-  height: 100vh; /* Добавлено для привязки высоты к окну */
-  min-height: 500px; /* Минимальная высота, можно настроить по макету */
+  height: 100vh;
+  min-height: 500px;
   padding: 20px;
   position: relative;
   display: flex;
@@ -289,12 +277,11 @@
   line-height: 82.5%;
 }
 
-/* Общие стили для элементов, которые не меняются в медиазапросах */
 @media (max-width: 768px), (max-width: 560px) {
-  .question__section__one,
-  .question__section-answer-two-container,
-  .question__section__fhree {
-    gap: 20px; /* Убрали дублирование gap */
+  .question__section__concentration-is-lost,
+  .question__section-answer-lose-container,
+  .question__section__better {
+    gap: 20px;
   }
 
 .header__theme-menu {
@@ -349,10 +336,9 @@
   position: relative;
 }
 }
-/* Медиазапросы для адаптивности */
+
 
 @media (max-width: 768px) {
-  /* Обновляем только необходимые свойства */
   .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
@@ -360,27 +346,27 @@
   }
 
   .header__text {
-    padding: 20px 0;  /* Пример: padding сверху и снизу по 20px */
-    max-inline-size: 364px; /* Это значение останется без изменений */
-    box-sizing: border-box; /* Это важно, чтобы padding не увеличивал общую высоту */
+    padding: 20px 0;
+    max-inline-size: 364px;
+    box-sizing: border-box;
   }
 
-  .question__section__one {
+  .question__section__сoncentration {
     grid-template-columns: 33% 67%;
     padding-inline-end: 20px;
   }
 
-  .question__section-answer-two-container {
+  .question__section-answer-concentration-is-lost-container {
     display: flex;
     flex-direction: column;
     padding-block-start: 20px;
   }
 
-  .question__section-title-two {
+  .question__section-title-concentration-is-lost {
     max-inline-size: 236px;
   }
 
-  .question__section__fhree {
+  .question__section__better {
     display: grid;
     grid-template-columns: 35% 65%;
     padding-block-end: 80px;
@@ -392,7 +378,6 @@
 }
 
 @media (max-width: 560px) {
-  /* Медиазапросы для ещё меньших экранов */
   .header {
     padding: 10px;
   }
@@ -407,30 +392,30 @@
     max-block-size: 117px;
   }
 
-  .question__section__one {
+  .question__section__сoncentration {
     margin: 0px 10px;
     padding: 40px 0 0 0;
     display: flex;
     flex-direction: column;
   }
 
-  .question__section-two {
+  .question__section-concentration-is-lost {
     margin: 0 10px;
     padding-block-start: 50px;
     padding-inline-end: 0;
     padding-block-end: 50px;
   }
 
-  .question__section-title-two {
+  .question__section-title-losted {
     min-inline-size: 355px;
   }
 
-  .question__section-answer-two-container {
+  .question__section-answer-concentration-is-lost-container {
     display: flex;
     flex-direction: column;
   }
 
-  .question__section__fhree {
+  .question__section__better {
     margin: 0 10px;
     display: flex;
     flex-direction: column;
